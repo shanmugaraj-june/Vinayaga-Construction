@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yellow: #F5B800;
+  --black: #0A0A0A;
+  --cream: #F8F8F0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: #0A0A0A; color: #F8F8F0; overflow-x: hidden; }
+
+.light body, html.light body { background: #F8F8F0; color: #0A0A0A; }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: #F5B800; border-radius: 2px; }
+
+.font-display { font-family: 'Bebas Neue', serif; letter-spacing: 0.05em; }
+
+.whatsapp-float { position: fixed; bottom: 24px; right: 24px; z-index: 1000; }
+@keyframes wafloat { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+.whatsapp-float { animation: wafloat 3s ease-in-out infinite; }
+
+@keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+.marquee-track { animation: marquee 25s linear infinite; }
+
+.service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.service-card:hover { transform: translateY(-6px); box-shadow: 0 20px 60px rgba(245,184,0,0.15); }
+
+.diagonal-cut { clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%); }
