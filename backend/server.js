@@ -8,22 +8,15 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
+// ✅ CORS — allow all origins (fixes Vercel blocked error)
 app.use(cors({
-  origin: function(origin, callback) {
-    const allowed = [
-      'http://localhost:3000',
-      process.env.FRONTEND_URL,
-    ].filter(Boolean);
-
-    if (!origin || allowed.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
+
+// Handle preflight requests
+app.options('*', cors());
 
 app.use(express.json());
 
