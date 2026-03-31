@@ -9,7 +9,7 @@ const services = [
     title: 'Residential Construction',
     tagline: 'Your Dream Home, Precisely Built',
     desc: 'From compact apartments to sprawling villas, we build residential spaces that blend structural integrity with aesthetic beauty. Our end-to-end approach covers planning, permits, construction, and finishing.',
-    features: ['Custom floor plan design','Premium material selection','Vastu-compliant layouts','Earthquake-resistant structures','Modern electrical and plumbing','Post-construction warranty'],
+    features: ['Custom floor plan design', 'Custom elevation','Premium material selection','Vastu-compliant layouts','Earthquake-resistant structures','Modern electrical and plumbing','Post-construction warranty'],
     duration: '6-18 months',
     projects: '100+'
   },
