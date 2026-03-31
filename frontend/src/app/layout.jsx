@@ -4,6 +4,9 @@ export const metadata = {
   title: 'Vinayaga Construction | Premium Construction Services Chennai',
   description: 'Expert construction in Chennai — Residential, Commercial, Renovation, Interior Design and Architectural Planning by Civil Engineer Azhagar.',
   keywords: 'construction company Chennai, residential construction, commercial construction, interior design, renovation',
+  icons: {
+    icon: '/icon.png',   // 👈 ADD THIS LINE
+  },
 };
 
 export default function RootLayout({ children }) {

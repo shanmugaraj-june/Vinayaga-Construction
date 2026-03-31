@@ -90,7 +90,7 @@ export default function AdminDashboard() {
                                src="/navLogo.png"
                                alt="Logo"
                                width={90}
-                               height={50}
+                               height={90}
                                className="rounded"
                              />
           </div>
