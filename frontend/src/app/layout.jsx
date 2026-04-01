@@ -5,7 +5,7 @@ export const metadata = {
   description: 'Expert construction in Chennai — Residential, Commercial, Renovation, Interior Design and Architectural Planning by Civil Engineer Azhagar.',
   keywords: 'construction company Chennai, residential construction, commercial construction, interior design, renovation',
   icons: {
-    icon: '/icon.png',   // 👈 ADD THIS LINE
+    icon: '/favicon.ico',   // 👈 ADD THIS LINE
   },
 };
 
