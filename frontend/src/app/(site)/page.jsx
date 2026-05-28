@@ -18,8 +18,8 @@ const testimonials = [
 ];
 
 const stats = [
-  { value: '200+', label: 'Projects Completed' },
-  { value: '150+', label: 'Happy Clients' },
+  { value: '100+', label: 'Projects Completed' },
+  { value: '90+', label: 'Happy Clients' },
   { value: '10+', label: 'Years Experience' },
   { value: '5 Star', label: 'Average Rating' },
 ];
